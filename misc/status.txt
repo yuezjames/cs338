@@ -1,2 +1,3 @@
 Zitian Yue
-I have finished installation of Kali.
+I plan to use Kali for testing computer security since it provides hundreds of tools for examination of cyber security like penetration testing.
+I have finished installation of Kali and successfully log in to the account on my own computer.
