@@ -1,1 +1,27 @@
+Zitian Yue
 
+1. I use command "ip a" on terminal of Kali to find that my computer's IP address is 192.168.124.128/24.
+   Reading source: https://linuxconfig.org/how-to-check-my-local-and-external-ip-address-on-kali-linux
+   
+2. I can use command "nslookup" with given host name to find the corresponding IP address. For example, command "nslookup carleton.edu" on terminal of Kali gives an IP address of 137.22.94.116.
+   Reading source: https://javarevisited.blogspot.com/2011/09/find-hostname-from-ip-address-to.html#axzz7PASwfsRG
+   
+3. I can also use command "nslookup" with given IP address to find the corresponding host name. For example, command "nslookup 137.22.1.13" on terminal of Kali gives a host name of ns.carleton.edu.
+   Reading source: https://linuxhint.com/find-hostname-ip-linux/
+   
+4. I would use command "nping" with host name first to find out the corresponding IP address and availabe port for file transfer. I will then use command "nc receiving_host port_number < file_name" on the terminal of Kali to transfer file.
+   Reading source: https://linuxize.com/post/netcat-nc-command-with-examples/
+ 
+5. We can use command "netstat" to determine whether ther is process listening on a given port on a given host.
+   Reading source: https://www.tecmint.com/find-out-which-process-listening-on-a-particular-port/
+   
+6. We can also use command "netstat" to scan through all ports of the given host to check which of them have process listening on them.
+   Reading source: https://linuxize.com/post/check-listening-ports-linux/
+   
+7. I can use command "curl -o" to download a given web page on the system as a html file.
+   Reading source: https://www.poftut.com/linux-curl-command-tutorial-examples/
+   
+8. We can use command "curl -i" with given web page to see the HTTP headers of that requrested web server.
+   Reading source: https://linuxconfig.org/how-to-check-a-website-header-using-linux-command-line
+   
+9. We can use command "curl -v" to view the HTTP headers that my computer sends to the given web server.
