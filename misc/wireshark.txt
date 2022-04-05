@@ -12,7 +12,13 @@ Zitian Yue
 4. Daytime Protocol
       Type: Respons
       Daytime: \n59672 22-04-03 15:21:32 50 0 0 721.9 UTC(NIST) * \n
-   In this frame, 59672 is the Modified Julian Day for systems that keep time as the number of seconds; 22-04-03 is year-month-day; 15:21:32 is hour:minute:second; 50    and first 0 are DST flag and LS flag. DST flag gives advance notice of the transitions to and from daylight saving time. LS flag gives notice of the imminent          occurrence of a leap second. The second 0 is H parameter which gives an estimate of the health of the time server. 721.9 gives the time advance in milliseconds. UTC    indicates coordinated universal time. \n is line-changing operator. 
+   In this frame, 59672 is the Modified Julian Day for systems that keep time as the number of seconds; 22-04-03 is year-month-day; 15:21:32 is hour:minute:second. 
+   50 is DST flag that gives advance notice of the transitions to and from daylight saving time. 
+   First 0 is LS flag that gives notice of the imminent occurrence of a leap second. 
+   The second 0 is H parameter which gives an estimate of the health of the time server. 
+   721.9 gives the time advance in milliseconds. 
+   UTC indicates coordinated universal time. 
+   \n is line-changing operator. 
 
 5. [SYN] means synchronization. This is the first step in TCP 3-way handshake as the client is trying to build communication with the server.
 
