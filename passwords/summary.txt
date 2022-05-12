@@ -1,3 +1,4 @@
+Zitian Yue
 Part 1
 Total time: 11m14.500s 
 Number of hashes computed: 381689897
@@ -6,4 +7,24 @@ Time per hash computed: 0.00000177s
 Time per password cracked: 0.24
 Passwords cracked per rnumber of hashes computed: 0.00000735
 
-I am still working on the rest. Sorry.
+Part 2
+Total time: 348m44.805s
+Number of hashes computed: 10654819742
+Passwords cracked: 388
+Time per hash computed: 0.00000196s
+Time per password cracked: 53.93s
+Passwords cracked per number of hashes computed: 0.0000000364
+
+Part 3
+Total time: 12m6.919s
+Number of hashes computed: 373431388
+Passwords cracked: 2804 (I checked that ohrstroma can't be solved with given information)
+Time per hash computed: 0.00000195s
+Time per password cracked: 0.26s
+Passwords cracked per number of hashes computed: 0.00000751
+
+Analysis
+My time per hash computed didn't change significantly between phases. This is because number of hashes computed is positively proportional to total time spent. If more iterations were necessary to crack the password, more hashes will be computed while total time increases.
+My time per password crack changed signifcantly between phases 1,3 and phase 2 by a factor of 2. Phase 1 does not differ much from phase 3 since they both implement one iteration through the file of words to crack the password. It takes two iterations for phase 2 to complete one crack since passwords are combinations of two components.
+Suppose I wanted to precompute all hashes for each possible password, it takes about 267733*(32+16+32)=21418640 bytes for phase 1 and phase 3. Phase 2 demands memory of about 267733*267733*(32+16+32)=5.73E12 bytes.
+If passwords were stored in plaintext, attackers can simply try seize the list of account information and gain full control of other people's account. Hashing makes it impossible to retrieve orginal texts at any reasonable amount of time for a hacker. Since many people like to include personal information like date of birth in their passwords, hashing prevents leak of personal information in a simple way. Since hashing is really input sensitive, it will be almost impossible for hackers to guess passwords based on some known information.
