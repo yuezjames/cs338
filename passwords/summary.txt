@@ -1,0 +1,9 @@
+Part 1
+Total time: 11m14.500s 
+Number of hashes computed: 381689897
+Passwords cracked: 2805
+Time per hash computed: 0.00000177s
+Time per password cracked: 0.24
+Passwords cracked per rnumber of hashes computed: 0.00000735
+
+I am still working on the rest. Sorry.
